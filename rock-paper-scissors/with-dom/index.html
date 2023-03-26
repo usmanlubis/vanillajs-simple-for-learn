@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Rock paper scissors</h1>
+		</header>
+		<main>
+			<div class="info">
+				<h2 id="result-info">Let&apos;s play Rock Paper Sissors</h2>
+				<p id="result-message">First to score 5 win the game</p>
+			</div>
+			<button id="reset-btn" class="btn">Reset</button>
+			<div class="display">
+				<div id="player-display" class="display-item">
+					<p>Player choice</p>
+					<p id="player-choice" class="choice">❔</p>
+					<p>Player : <span id="player-score">0</span></p>
+				</div>
+				<div id="result"></div>
+				<div id="player-computer" class="display-item">
+					<p>Computer choice</p>
+					<p id="computer-choice" class="choice">❔</p>
+					<p>Computer : <span id="computer-score">0</span></p>
+				</div>
+			</div>
+			<div class="game-board">
+				<h3>Pick your weapon</h3>
+				<div class="choices">
+					<button class="choice-item" value="rock">✊</button>
+					<button class="choice-item" value="paper">✋</button>
+					<button class="choice-item" value="scissors">✌</button>
+				</div>
+			</div>
+		</main>
+		<footer>
+			&copy;
+			<script>
+				document.write(new Date().getFullYear());
+			</script>
+			Usman Lubis
+		</footer>
+		<div id="overlay" class="overlay deactive">
+			<div class="modal">
+				<p id="final-result"></p>
+				<button id="play-again">Play Again</button>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Alkatra', cursive;
+}
+
+body {
+  min-height: 100vh;
+  background-color: darkgray;
+}
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222;
+  color: whitesmoke;
+  text-align: center;
+  padding: 1em 0;
+}
+
+main {
+  display: flex;;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  text-align: center;
+  margin-top: .5em;
+}
+
+.btn {
+  padding: .4em 1.4em;
+  font-size: 1rem;
+  border-radius: 1.2em;
+  border: 2 solid rgba(34, 34, 34, 0.623);
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.display {
+  margin-top: 1em;
+  text-align: center;
+  display: flex;
+  gap: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+#result {
+  font-size: 3rem;
+  font-weight: bold;
+  width: 210px;
+}
+
+.display-item {
+  width: 150px;
+  height: 150px;
+  background-color: whitesmoke;
+  border-radius: 1em;
+}
+
+.choice {
+  font-size: 3rem;
+}
+
+.game-board {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.choices {
+  margin-top: 1em;
+  display: flex;
+  gap: 2em;
+}
+
+.choice-item {
+  width: 180px;
+  height: 180px;
+  font-size: 5rem;
+  border-radius: .5em;
+}
+
+.choice-item:hover {
+  opacity: .9;
+  border: 3px solid greenyellow;
+}
+
+footer {
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.87);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 150px;
+  background-color: #ccc;
+  border-radius: 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#final-result {
+  font-size: 2rem;
+}
+
+#play-again {
+  background-color: #222;
+  font-size: 1.4rem;
+  padding: .3em;
+  border-radius: .7em;
+  width: 85%;
+  color: #ccc;
+}
+
+#play-again:hover {
+  opacity: .9;
+}
+
+.deactive {
+  display: none;
+}
