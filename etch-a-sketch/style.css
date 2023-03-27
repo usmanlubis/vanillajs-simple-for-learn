@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 2em;
+  align-items: center;
+}
+
+header {
+  margin-bottom: 1em;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+}
+
+.setting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4em;
+}
+
+.button {
+  padding: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 1em;
+  box-shadow: 0 2px 3px 0 black;
+}
+
+.button:hover{
+  opacity: .8;
+}
+
+.button:active{
+  background-color: #333;
+  color: whitesmoke;
+}
+
+.canvas-container {
+  text-align: center;
+}
+
+.canvas-container p {
+  margin-bottom: .5em;
+}
+
+.canvas {
+  display: grid;
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 1em 0;
+}
