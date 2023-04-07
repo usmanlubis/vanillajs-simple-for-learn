@@ -65,8 +65,8 @@ body {
 }
 
 .keypad {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border: none;
   color: white;
   border-radius: 50%;
@@ -112,6 +112,14 @@ body {
 
 footer {
   display: none;
+}
+
+
+@media only screen and (min-width: 346px) {
+  .keypad{
+    height: 70px;
+    width: 70px;
+  }
 }
 
 @media only screen and (min-width: 567px) {
