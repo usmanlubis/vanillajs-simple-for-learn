@@ -30,6 +30,27 @@ body {
   background-color: var(--screen-background);
 }
 
+
+.sub-display,
+.main-display {
+  display: block;
+  color: white;
+  text-align: end;
+  padding-right: 10px;
+}
+
+.sub-display {
+  height: 30%;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.main-display {
+  height: 70%;
+  font-weight: bold;
+  font-size: 6rem;
+}
+
 .keypad-area {
   padding: 1em;
   height: 70%;
@@ -89,32 +110,17 @@ body {
   opacity: .7;
 }
 
-.sub-display,
-.main-display {
-  display: block;
-  color: white;
-  text-align: end;
-  padding-right: 10px;
-}
-
-.sub-display {
-  height: 30%;
-  font-weight: bold;
-  font-size: 3rem;
-}
-
-.main-display {
-  height: 70%;
-  font-weight: bold;
-  font-size: 7rem;
+footer {
+  display: none;
 }
 
 @media only screen and (min-width: 567px) {
   body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
   }
 
   .calculator {
@@ -124,7 +130,9 @@ body {
     border-radius: 1rem;
     box-shadow: 3px 9px 5px 3px rgba(95,95,95,0.71);
     -webkit-box-shadow: 3px 9px 5px 3px rgba(95,95,95,0.71);
-    -moz-box-shadow: 3px 9px 5px 3px rgba(95,95,95,0.71);  }
+    -moz-box-shadow: 3px 9px 5px 3px rgba(95,95,95,0.71);  
+    margin-bottom: 3rem;
+  }
 
   .screen {
     border-radius: .5rem .5rem 0 0;
@@ -132,5 +140,28 @@ body {
 
   .keypad-area {
     border-radius: 0 0 .5rem .5rem;
+  }
+
+  footer {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    background-color: #222222;
+    color: white;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+  }
+
+  a:hover {
+    color: rgb(150, 150, 150);
+    display: inline-block;
+    transform: scale(1.1);
   }
 }
