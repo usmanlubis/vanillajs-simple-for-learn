@@ -108,3 +108,29 @@ body {
   font-weight: bold;
   font-size: 7rem;
 }
+
+@media only screen and (min-width: 567px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .calculator {
+    height: 550px;
+    width: 370px;
+    border: 6px solid #5f5f5f;
+    border-radius: 1rem;
+    box-shadow: 3px 9px 5px 3px rgba(95,95,95,0.71);
+    -webkit-box-shadow: 3px 9px 5px 3px rgba(95,95,95,0.71);
+    -moz-box-shadow: 3px 9px 5px 3px rgba(95,95,95,0.71);  }
+
+  .screen {
+    border-radius: .5rem .5rem 0 0;
+  }
+
+  .keypad-area {
+    border-radius: 0 0 .5rem .5rem;
+  }
+}
