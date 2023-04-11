@@ -4,14 +4,13 @@ const errorMessage = document.getElementById('error-message');
 
 function confirmPasswordHandler(){
   const passwordValue = password.value;
-  console.log(passwordValue)
   const confirmPasswordValue = confirmPassword.value;
   const isMatch = isConfirmPasswordMatch(passwordValue, confirmPasswordValue);
 
   if (isMatch){
     password.classList.remove('error');
     confirmPassword.classList.remove('error');
-    if (password.length > 0){
+    if (passwordValue.length > 0){
       errorMessage.style.display = 'none';
     }
     return;
