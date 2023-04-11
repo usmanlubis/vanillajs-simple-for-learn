@@ -15,9 +15,10 @@ function confirmPasswordHandler(){
     }
     return;
   }
+    console.log('salaaah')
     password.classList.add('error');
     confirmPassword.classList.add('error');
-    errorMessage.style.displey = 'block';
+    errorMessage.style.display = 'block';
     return;
 }
 
