@@ -54,13 +54,19 @@
 						</div>
 					</div>
 					<div class="row">
-						<div>
+						<div class="password-field">
 							<label for="password">password</label>
 							<input type="password" name="password" id="password" required />
+							<span id="error-message">*Password do not match</span>
 						</div>
 						<div>
 							<label for="confirm-password">confirm password</label>
-							<input type="password" name="password" id="password" required />
+							<input
+								type="password"
+								name="confirm-password"
+								id="confirm-password"
+								required
+							/>
 						</div>
 					</div>
 				</fieldset>
@@ -73,5 +79,6 @@
 				Already have an account? <a href="/" class="login-link">Log In</a>
 			</p>
 		</main>
+		<script src="./script.js"></script>
 	</body>
 </html>

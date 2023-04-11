@@ -7,7 +7,6 @@
   --primary-background: #F9FAFB;
   --green-color: #596D48;
   --focus-input: #7794E7;
-  --invalid-input: red;
   --label-color: #343D4A;
   --content-padding: 2em 0 0 2em;
 }
@@ -110,6 +109,10 @@ input {
   border-radius: .5em;
 }
 
+input:focus {
+  border-color: blue;
+}
+
 input:invalid {
   border-color: red;
 }
@@ -161,4 +164,21 @@ input:invalid {
 
 .login-link:hover {
   opacity: .8;
+}
+
+.password-field{
+  position: relative;
+}
+
+#error-message{
+  display: block;
+  position: absolute;
+  color: red;
+  font-size: .7rem;
+  bottom: -1.5em;
+  font-weight: 600;
+}
+
+.error {
+  border-color: red;
 }
