@@ -15,7 +15,7 @@
 			</div>
 		</aside>
 		<main class="main">
-			<div class="content-container">
+			<div class="text-section-container">
 				<p class="bold">
 					This is not a real online service! You know you need something like
 					this in your life to help you realize your deepest dreams. Sign up
@@ -24,49 +24,54 @@
 				</p>
 				<p class="bold">You know you want to.</p>
 				<p class="form-callout">Let's do this!</p>
-
-				<form>
-					<fieldset class="form-container">
-						<div class="row">
-							<div>
-								<label for="first-name">first name</label>
-								<input type="text" name="first-name" id="first-name" required />
-							</div>
-							<div>
-								<label for="last-name">last name</label>
-								<input type="text" name="last-name" id="last-name" required />
-							</div>
-						</div>
-						<div class="row">
-							<div>
-								<label for="emali">email</label>
-								<input type="email" name="email" id="email" required />
-							</div>
-							<div>
-								<label for="phone-number">phone number</label>
-								<input
-									type="tel"
-									name="phone-number"
-									id="phone-number"
-									pattern="[0-9]{10}"
-									required
-								/>
-							</div>
-						</div>
-						<div class="row">
-							<div>
-								<label for="password">password</label>
-								<input type="password" name="password" id="password" required />
-							</div>
-							<div>
-								<label for="confirm-password">confirm password</label>
-								<input type="password" name="password" id="password" required />
-							</div>
-						</div>
-					</fieldset>
-				</form>
 			</div>
-			<div class="divider"></div>
+			<form>
+				<fieldset class="form-container">
+					<div class="row">
+						<div>
+							<label for="first-name">first name</label>
+							<input type="text" name="first-name" id="first-name" required />
+						</div>
+						<div>
+							<label for="last-name">last name</label>
+							<input type="text" name="last-name" id="last-name" required />
+						</div>
+					</div>
+					<div class="row">
+						<div>
+							<label for="emali">email</label>
+							<input type="email" name="email" id="email" required />
+						</div>
+						<div>
+							<label for="phone-number">phone number</label>
+							<input
+								type="tel"
+								name="phone-number"
+								id="phone-number"
+								pattern="[0-9]{10}"
+								required
+							/>
+						</div>
+					</div>
+					<div class="row">
+						<div>
+							<label for="password">password</label>
+							<input type="password" name="password" id="password" required />
+						</div>
+						<div>
+							<label for="confirm-password">confirm password</label>
+							<input type="password" name="password" id="password" required />
+						</div>
+					</div>
+				</fieldset>
+				<div class="divider"></div>
+				<fieldset class="button-section">
+					<button type="submit" class="register-button">Create Account</button>
+				</fieldset>
+			</form>
+			<p class="login-call">
+				Already have an account? <a href="/" class="login-link">Log In</a>
+			</p>
 		</main>
 	</body>
 </html>
