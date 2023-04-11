@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Nurse-Bold";
+  src: url("assets/fonts/Norse-Bold.otf");
+}
+
+:root{
+  --primary-background: #F9FAFB;
+  --green-color: #596D48;
+  --focus-input: #7794E7;
+  --invalid-input: red;
+  --label-color: #343D4A;
+}
+
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 62.5%;
+  display: flex;
+  height: 100vh;
+}
+
+.aside {
+  width: 35%;
+  background-image: url('assets/images/leaf.jpg');
+  position: relative;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .4);
+  position: absolute;
+  top: calc(30vh - 4rem);
+}
+
+.odin-logo {
+  height: 8rem;
+  width: 6rem;
+  background-image: url('assets/images/odin-lined.png');
+  background-size: cover;
+}
+
+.odin-name{
+  color: white;
+  font-family: 'Nurse-Bold';
+  font-size: 7rem;
+}
+
+.main {
+  width: 65%;
+  background-color: var(--primary-background);
+}
+
+.content-container {
+  width: 83%;
+  padding: 2em 0 0 2em;
+}
+
+.bold {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.form-callout {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  border: none;
+}
+
+.row {
+  display: flex;
+  gap: 5em;
+}
+
+label {
+  display: block;
+  color: var(--label-color);
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  font-weight: bold;
+  font-size: .8rem;
+  margin-bottom: .5em;
+}
+
+input {
+  height: 2em;
+  width: 250px;
+}
+
+.divider {
+  height: 30px;
+  width: 100%;
+  box-shadow: 0px 12px 8px -4px rgba(0,0,0,0.50);
+  -webkit-box-shadow: 0px 12px 8px -4px rgba(0,0,0,0.50);
+  -moz-box-shadow: 0px 12px 8px -4px rgba(0,0,0,0.50);;
+}
