@@ -59,6 +59,7 @@ body {
 .main {
   width: 65%;
   background-color: var(--primary-background);
+  padding-top: 6em;
 }
 
 .content-container {
@@ -75,14 +76,14 @@ body {
 .form-callout {
   font-size: 1rem;
   font-weight: 600;
-  margin-top: 3em;
+  margin-top: 2.2em;
   margin-bottom: 1em;
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 1.5em;
   border: none;
 }
 
@@ -109,7 +110,7 @@ input {
 .divider {
   height: 30px;
   width: 100%;
-  box-shadow: 0px 12px 8px -4px rgba(0,0,0,0.50);
-  -webkit-box-shadow: 0px 12px 8px -4px rgba(0,0,0,0.50);
-  -moz-box-shadow: 0px 12px 8px -4px rgba(0,0,0,0.50);;
+  box-shadow: 0px 8px 8px -4px rgba(0,0,0,0.50);
+  -webkit-box-shadow: 0px 8px 8px -4px rgba(0,0,0,0.50);
+  -moz-box-shadow: 0px 8px 8px -4px rgba(0,0,0,0.50);;
 }
