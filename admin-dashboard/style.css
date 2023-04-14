@@ -297,6 +297,12 @@ button {
   color: rgba(0, 0, 0, .7);
 }
 
+@media only screen and (min-width: 375px) {
+  .navbar {
+    width: 200px;
+  }
+}
+
 @media only screen and (min-width: 576px) {
   .search-input {
     width: 300px;
