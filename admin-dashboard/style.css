@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --blue-color: #1992D4;
+  --background-primary: #E2E8F0;
+  --orange-color: #F0B429;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 1em;
+}
+
+button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.search-and-account-option {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-toggle {
+  margin-right: .5em;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  cursor: pointer;
+}
+
+.account-option {
+  display: flex;
+  align-items: center;
+  gap: .3em;
+}
+
+.bell-icon {
+  margin-right: .5em;
+}
+
+.search-icon:hover,
+.bell-icon:hover,
+.account-icon:hover,
+.navbar-toggle:hover {
+  transform: scale(1.1);
+}
+
+.header-icon {
+  height: 30px;
+}
+
+.search-input {
+  background-color: var(--background-primary);
+  padding: 1em;
+  border: none;
+  height: 20px;
+  width: 70%;
+  border-radius: 1em;
+}
+
+.search-input:focus {
+  border: none;
+}
+
+.account-name {
+  font-weight: bold;
+  white-space: nowrap;
+}
