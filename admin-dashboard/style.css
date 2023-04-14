@@ -201,6 +201,13 @@ button {
   padding: 1em;
 }
 
+.projects-card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, max-content);
+  row-gap: 1em;
+}
+
 .project-card {
   background-color: var(--orange-color);
   padding-left: .7em;
