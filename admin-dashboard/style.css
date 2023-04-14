@@ -16,8 +16,10 @@
 }
 
 body {
+  font-family: 'Roboto', 'sans-serif';
   position: relative;
   min-height: 100vh;
+  background-color: var(--background-primary);
 }
 
 .navbar {
@@ -79,6 +81,7 @@ body {
 
 header {
   padding: 1em;
+  background-color: white;
 }
 
 button {
@@ -142,4 +145,49 @@ button {
 .account-name {
   font-weight: bold;
   white-space: nowrap;
+}
+
+.action-and-avatar-header {
+  margin-top: .3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.avatar-icon {
+  height: 50px;
+}
+
+.greeting {
+  font-size: .8rem;
+}
+
+.greeting,
+.account-username {
+  font-weight: bold;
+}
+
+.action-header {
+  display: flex;
+  gap: 1em;
+}
+
+.action-button {
+  gap: 1em;
+  background-color: var(--blue-color);
+  color: white;
+  padding: .5em 0em;
+  width: 70px;
+  border-radius: 1em;
+  transition: transform .3s;
+}
+
+.action-button:hover {
+  transform: scale(1.05);
+  opacity: .9;
 }
