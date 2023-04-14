@@ -21,10 +21,9 @@ body {
 }
 
 .navbar {
-  display: none;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -9999px;
   bottom: 0;
   width: 55%;
   background-color: var(--blue-color);
@@ -61,6 +60,8 @@ body {
   align-items: center;
   gap: 1em;
   transition: transform .25s;
+  width: max-content;
+  cursor: pointer;
 }
 
 .navbar-side-icon-wrapper:hover {
