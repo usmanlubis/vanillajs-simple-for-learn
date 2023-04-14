@@ -218,10 +218,15 @@ button {
 .card-content {
   background-color: white;
   padding: 2em 1em;
+  height: 100%;
   border-radius: 0 1em 1em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
 }
 
-.card-content>h3 {
+.card-content h3 {
   margin-bottom: .3em;
 }
 
@@ -230,7 +235,6 @@ button {
   align-items: center;
   justify-content: end;
   gap: 1em;
-  margin: 2em 0 0 0;
 }
 
 .card-action-icon {
@@ -291,4 +295,29 @@ button {
 
 .project-trending {
   color: rgba(0, 0, 0, .7);
+}
+
+@media only screen and (min-width: 576px) {
+  .search-input {
+    width: 300px;
+  }
+
+  .action-and-avatar-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .projects-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1em;
+  }
+
+  .announcement-section,
+  .trending-section {
+    width: 80%;
+    margin: auto;
+  }
 }
