@@ -211,14 +211,14 @@ button {
 
 .project-card {
   background-color: var(--orange-color);
-  padding-left: .7em;
-  border-radius: .7em;
+  padding-left: 1em;
+  border-radius: 1em;
 }
 
 .card-content {
   background-color: white;
-  padding: 1em .5em;
-  border-radius: 0 .7em .7em 0;
+  padding: 2em 1em;
+  border-radius: 0 1em 1em 0;
 }
 
 .card-content>h3 {
@@ -235,4 +235,27 @@ button {
 
 .card-action-icon {
   height: 20px;
+}
+
+.announcement-section {
+  padding: 1em;
+}
+
+.announcement-card {
+  background-color: white;
+  padding: 2em;
+  border-radius: 1em;
+}
+
+.announcement-item:not(:last-child) {
+  padding-bottom: 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.announcement-item:not(:first-child) {
+  padding-top: 1em;
+}
+
+.announcement-item>p {
+  color: rgba(0, 0, 0, 0.7);
 }
