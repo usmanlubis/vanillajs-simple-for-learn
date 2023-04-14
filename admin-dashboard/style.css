@@ -191,3 +191,40 @@ button {
   transform: scale(1.05);
   opacity: .9;
 }
+
+.section-title {
+  margin-bottom: .5em;
+  text-align: center;
+}
+
+.projects {
+  padding: 1em;
+}
+
+.project-card {
+  background-color: var(--orange-color);
+  padding-left: .7em;
+  border-radius: .7em;
+}
+
+.card-content {
+  background-color: white;
+  padding: 1em .5em;
+  border-radius: 0 .7em .7em 0;
+}
+
+.card-content>h3 {
+  margin-bottom: .3em;
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1em;
+  margin: 2em 0 0 0;
+}
+
+.card-action-icon {
+  height: 20px;
+}
