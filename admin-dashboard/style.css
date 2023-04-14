@@ -259,3 +259,36 @@ button {
 .announcement-item>p {
   color: rgba(0, 0, 0, 0.7);
 }
+
+.trending-section {
+  padding: 1em;
+}
+
+.trending-card {
+  background-color: white;
+  padding: 2em;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.trending-item {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+}
+
+.avatar-trending-icon {
+  height: 50px;
+}
+
+.profile-detail {
+  display: flex;
+  flex-direction: column;
+  gap: .2em;
+}
+
+.project-trending {
+  color: rgba(0, 0, 0, .7);
+}
