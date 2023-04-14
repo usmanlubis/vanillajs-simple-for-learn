@@ -21,11 +21,12 @@ body {
 }
 
 .navbar {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
-  width: 50%;
+  width: 55%;
   background-color: var(--blue-color);
   padding: 1em;
   color: white;
@@ -33,15 +34,41 @@ body {
 
 .navbar-side-title {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: .4em;
+}
+
+.navbar-side-title h3 {
+  font-size: 1.5rem;
 }
 
 .navbar-side-button {
   fill: white;
   width: 30px;
   background-color: var(--blue-color);
+}
+
+.navbar-side-icons-group {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-left: 1em;
+}
+
+.navbar-side-icon-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  transition: transform .25s;
+}
+
+.navbar-side-icon-wrapper:hover {
+  transform: scale(1.1);
+}
+
+.icons-separation {
+  margin-top: 3em;
 }
 
 .navbar-side-icon {
